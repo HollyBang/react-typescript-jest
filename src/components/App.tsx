@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Provider } from 'react-redux';
 import store from '../redux';
+import Counter from './Counter';
 
 // import PageInterface from '../interfaces/PageInterface';
 
@@ -11,6 +12,7 @@ class App extends React.Component {
 				<div>
 					<h1>Welcome to React with Typescript АУЕ</h1>
 				</div>
+				<Counter/>
 			</Provider>
 		);
 	}

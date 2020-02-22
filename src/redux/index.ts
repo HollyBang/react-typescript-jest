@@ -8,6 +8,6 @@ const enhancer = composeEnhancers(applyMiddleware(...middlewares));
 
 const initialState = {};
 
-const store = createStore(rootReducer, initialState, enhancer);
+const store = createStore(rootReducer(), initialState, enhancer);
 
 export default store;
