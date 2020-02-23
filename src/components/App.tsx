@@ -6,16 +6,16 @@ import Counter from './Counter';
 // import PageInterface from '../interfaces/PageInterface';
 
 class App extends React.Component {
-	render() {
-		return (
-			<Provider store={store}>
-				<div>
-					<h1>Welcome to React with Typescript АУЕ</h1>
-				</div>
-				<Counter/>
-			</Provider>
-		);
-	}
+  render() {
+    return (
+      <Provider store={store}>
+        <div>
+          <h1>Wazzuup!</h1>
+        </div>
+        <Counter />
+      </Provider>
+    );
+  }
 }
 
 export default App;
