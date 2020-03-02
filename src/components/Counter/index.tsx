@@ -1,11 +1,10 @@
 import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import addCount from './action';
+import { AppState, AppStore } from '../../rootReducers';
 
-const Count = () => {
-  // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
-  // @ts-ignore
-  const count = useSelector(state => state.counter.count);
+const Count: React.FC = () => {
+  const count = useSelector((state): AppState => state.counter.count);
   const dispatch = useDispatch();
 
   return (

@@ -1,13 +1,20 @@
-const initialState = {
+import { ActionTypes } from '../../rootReducers';
+import { AddCountAction } from 'components/Counter/action';
+
+export interface CountState {
+  count: number;
+}
+
+const initialState: CountState = {
   count: 0,
 };
 
-const counter = (state = initialState, action) => {
+const counter = (state: CountState = initialState, action: AddCountAction): CountState => {
   console.log('Count reducer', action);
   const { type } = action;
 
   switch (type) {
-    case 'ADD_COUNT':
+    case ActionTypes.ADD_COUNT:
       return {
         ...state,
         count: state.count + 1,
