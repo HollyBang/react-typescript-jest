@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import addCount from './action';
-import { AppState, AppStore } from '../../rootReducers';
+import { AppState } from '../../rootReducers';
 
 const Count: React.FC = () => {
-  const count = useSelector((state): AppState => state.counter.count);
+  const count = useSelector((state: AppState) => state.counter.count);
   const dispatch = useDispatch();
 
   return (

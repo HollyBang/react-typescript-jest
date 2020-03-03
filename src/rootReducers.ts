@@ -1,5 +1,5 @@
-import { combineReducers, Reducer } from 'redux';
-import counter, { CountState } from './components/Counter/reducer';
+import { combineReducers } from 'redux';
+import counter from './components/Counter/reducer';
 
 export enum ActionTypes {
   ADD_COUNT = 'ADD_COUNT',
@@ -9,11 +9,7 @@ export interface ReduxBaseAction {
   type: ActionTypes;
 }
 
-export interface AppStore {
-  counter: CountState;
-}
-
-const rootReducer: Reducer<AppStore> = combineReducers<AppStore>({
+const rootReducer = combineReducers({
   counter,
 });
 
