@@ -1,5 +1,5 @@
 import { ActionTypes } from '../../rootReducers';
-import { AddCountAction } from 'components/Counter/action';
+import { AddCountAction } from './action';
 
 export interface CountState {
   count: number;
